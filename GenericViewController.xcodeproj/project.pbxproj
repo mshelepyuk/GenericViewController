@@ -7,14 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEB2E25A204AEC2500B5EADC /* ResultRendererDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E259204AEC2500B5EADC /* ResultRendererDelegate.swift */; };
+		BEB2E25C204AEC9600B5EADC /* ResultPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E25B204AEC9600B5EADC /* ResultPickerVC.swift */; };
+		BEB2E25F204AED0600B5EADC /* ResultRendererInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E25E204AED0600B5EADC /* ResultRendererInput.swift */; };
+		BEB2E261204AEF0400B5EADC /* CityDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E260204AEF0400B5EADC /* CityDataSource.swift */; };
+		BEB2E263204AF21500B5EADC /* CityResultPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E262204AF21500B5EADC /* CityResultPickerVC.swift */; };
+		BEB2E265204AF33000B5EADC /* UITableView+Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E264204AF33000B5EADC /* UITableView+Generics.swift */; };
+		BEB2E267204AF35400B5EADC /* NSObject+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E266204AF35400B5EADC /* NSObject+Sugar.swift */; };
+		BEB2E269204AF5E300B5EADC /* AddressEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E268204AF5E300B5EADC /* AddressEntity.swift */; };
+		BEB2E26B204AF69300B5EADC /* StreetDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E26A204AF69300B5EADC /* StreetDataSource.swift */; };
+		BEB2E26D204AF78800B5EADC /* HouseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E26C204AF78800B5EADC /* HouseDataSource.swift */; };
+		BEB2E270204AF7B700B5EADC /* HousePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E26F204AF7B700B5EADC /* HousePickerVC.swift */; };
+		BEB2E272204AF7E100B5EADC /* StreetPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E271204AF7E100B5EADC /* StreetPickerVC.swift */; };
 		BEE5FABB204AE7C90072ABD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5FABA204AE7C90072ABD1 /* AppDelegate.swift */; };
 		BEE5FABD204AE7C90072ABD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5FABC204AE7C90072ABD1 /* ViewController.swift */; };
 		BEE5FAC0204AE7CA0072ABD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE5FABE204AE7CA0072ABD1 /* Main.storyboard */; };
 		BEE5FAC2204AE7CA0072ABD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE5FAC1204AE7CA0072ABD1 /* Assets.xcassets */; };
 		BEE5FAC5204AE7CA0072ABD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE5FAC3204AE7CA0072ABD1 /* LaunchScreen.storyboard */; };
+		BEE5FAD0204AE88F0072ABD1 /* CommonDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5FACF204AE88F0072ABD1 /* CommonDataSource.swift */; };
+		BEE5FAD2204AE9420072ABD1 /* CommonResultListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5FAD1204AE9420072ABD1 /* CommonResultListItem.swift */; };
+		BEE5FAD4204AE95E0072ABD1 /* StreetEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5FAD3204AE95E0072ABD1 /* StreetEntity.swift */; };
+		BEE5FAD6204AE9890072ABD1 /* HouseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5FAD5204AE9890072ABD1 /* HouseEntity.swift */; };
+		BEE5FAD8204AE9AD0072ABD1 /* CityEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5FAD7204AE9AD0072ABD1 /* CityEntity.swift */; };
+		BEE5FADB204AE9DB0072ABD1 /* Entities+ResultListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5FADA204AE9DB0072ABD1 /* Entities+ResultListItem.swift */; };
+		BEE5FADE204AEA4D0072ABD1 /* ResultRendererVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5FADD204AEA4D0072ABD1 /* ResultRendererVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BEB2E259204AEC2500B5EADC /* ResultRendererDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRendererDelegate.swift; sourceTree = "<group>"; };
+		BEB2E25B204AEC9600B5EADC /* ResultPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPickerVC.swift; sourceTree = "<group>"; };
+		BEB2E25E204AED0600B5EADC /* ResultRendererInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRendererInput.swift; sourceTree = "<group>"; };
+		BEB2E260204AEF0400B5EADC /* CityDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataSource.swift; sourceTree = "<group>"; };
+		BEB2E262204AF21500B5EADC /* CityResultPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityResultPickerVC.swift; sourceTree = "<group>"; };
+		BEB2E264204AF33000B5EADC /* UITableView+Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Generics.swift"; sourceTree = "<group>"; };
+		BEB2E266204AF35400B5EADC /* NSObject+Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Sugar.swift"; sourceTree = "<group>"; };
+		BEB2E268204AF5E300B5EADC /* AddressEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressEntity.swift; sourceTree = "<group>"; };
+		BEB2E26A204AF69300B5EADC /* StreetDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetDataSource.swift; sourceTree = "<group>"; };
+		BEB2E26C204AF78800B5EADC /* HouseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDataSource.swift; sourceTree = "<group>"; };
+		BEB2E26F204AF7B700B5EADC /* HousePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousePickerVC.swift; sourceTree = "<group>"; };
+		BEB2E271204AF7E100B5EADC /* StreetPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetPickerVC.swift; sourceTree = "<group>"; };
 		BEE5FAB7204AE7C90072ABD1 /* GenericViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE5FABA204AE7C90072ABD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEE5FABC204AE7C90072ABD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +53,13 @@
 		BEE5FAC1204AE7CA0072ABD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEE5FAC4204AE7CA0072ABD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEE5FAC6204AE7CA0072ABD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE5FACF204AE88F0072ABD1 /* CommonDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDataSource.swift; sourceTree = "<group>"; };
+		BEE5FAD1204AE9420072ABD1 /* CommonResultListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonResultListItem.swift; sourceTree = "<group>"; };
+		BEE5FAD3204AE95E0072ABD1 /* StreetEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetEntity.swift; sourceTree = "<group>"; };
+		BEE5FAD5204AE9890072ABD1 /* HouseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseEntity.swift; sourceTree = "<group>"; };
+		BEE5FAD7204AE9AD0072ABD1 /* CityEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityEntity.swift; sourceTree = "<group>"; };
+		BEE5FADA204AE9DB0072ABD1 /* Entities+ResultListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entities+ResultListItem.swift"; sourceTree = "<group>"; };
+		BEE5FADD204AEA4D0072ABD1 /* ResultRendererVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRendererVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +73,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEB2E26E204AF7AC00B5EADC /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				BEB2E262204AF21500B5EADC /* CityResultPickerVC.swift */,
+				BEB2E26F204AF7B700B5EADC /* HousePickerVC.swift */,
+				BEB2E271204AF7E100B5EADC /* StreetPickerVC.swift */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
 		BEE5FAAE204AE7C90072ABD1 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +102,11 @@
 		BEE5FAB9204AE7C90072ABD1 /* GenericViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BEE5FADC204AEA3B0072ABD1 /* ViewControllers */,
+				BEE5FAD9204AE9C80072ABD1 /* Extensions */,
+				BEE5FACE204AE87E0072ABD1 /* Protocols */,
+				BEE5FACD204AE8780072ABD1 /* DataSource */,
+				BEE5FACC204AE8730072ABD1 /* Entities */,
 				BEE5FABA204AE7C90072ABD1 /* AppDelegate.swift */,
 				BEE5FABC204AE7C90072ABD1 /* ViewController.swift */,
 				BEE5FABE204AE7CA0072ABD1 /* Main.storyboard */,
@@ -62,6 +115,58 @@
 				BEE5FAC6204AE7CA0072ABD1 /* Info.plist */,
 			);
 			path = GenericViewController;
+			sourceTree = "<group>";
+		};
+		BEE5FACC204AE8730072ABD1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BEE5FAD3204AE95E0072ABD1 /* StreetEntity.swift */,
+				BEE5FAD5204AE9890072ABD1 /* HouseEntity.swift */,
+				BEE5FAD7204AE9AD0072ABD1 /* CityEntity.swift */,
+				BEB2E268204AF5E300B5EADC /* AddressEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BEE5FACD204AE8780072ABD1 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				BEB2E260204AEF0400B5EADC /* CityDataSource.swift */,
+				BEB2E26A204AF69300B5EADC /* StreetDataSource.swift */,
+				BEB2E26C204AF78800B5EADC /* HouseDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		BEE5FACE204AE87E0072ABD1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BEE5FACF204AE88F0072ABD1 /* CommonDataSource.swift */,
+				BEE5FAD1204AE9420072ABD1 /* CommonResultListItem.swift */,
+				BEB2E259204AEC2500B5EADC /* ResultRendererDelegate.swift */,
+				BEB2E25E204AED0600B5EADC /* ResultRendererInput.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BEE5FAD9204AE9C80072ABD1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BEE5FADA204AE9DB0072ABD1 /* Entities+ResultListItem.swift */,
+				BEB2E264204AF33000B5EADC /* UITableView+Generics.swift */,
+				BEB2E266204AF35400B5EADC /* NSObject+Sugar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BEE5FADC204AEA3B0072ABD1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BEB2E26E204AF7AC00B5EADC /* Pickers */,
+				BEE5FADD204AEA4D0072ABD1 /* ResultRendererVC.swift */,
+				BEB2E25B204AEC9600B5EADC /* ResultPickerVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +241,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB2E265204AF33000B5EADC /* UITableView+Generics.swift in Sources */,
+				BEE5FADE204AEA4D0072ABD1 /* ResultRendererVC.swift in Sources */,
+				BEB2E26D204AF78800B5EADC /* HouseDataSource.swift in Sources */,
+				BEB2E25C204AEC9600B5EADC /* ResultPickerVC.swift in Sources */,
+				BEE5FAD2204AE9420072ABD1 /* CommonResultListItem.swift in Sources */,
+				BEB2E261204AEF0400B5EADC /* CityDataSource.swift in Sources */,
+				BEB2E267204AF35400B5EADC /* NSObject+Sugar.swift in Sources */,
+				BEB2E263204AF21500B5EADC /* CityResultPickerVC.swift in Sources */,
+				BEE5FAD0204AE88F0072ABD1 /* CommonDataSource.swift in Sources */,
+				BEB2E272204AF7E100B5EADC /* StreetPickerVC.swift in Sources */,
+				BEE5FADB204AE9DB0072ABD1 /* Entities+ResultListItem.swift in Sources */,
+				BEE5FAD4204AE95E0072ABD1 /* StreetEntity.swift in Sources */,
+				BEB2E25F204AED0600B5EADC /* ResultRendererInput.swift in Sources */,
+				BEB2E269204AF5E300B5EADC /* AddressEntity.swift in Sources */,
 				BEE5FABD204AE7C90072ABD1 /* ViewController.swift in Sources */,
 				BEE5FABB204AE7C90072ABD1 /* AppDelegate.swift in Sources */,
+				BEB2E25A204AEC2500B5EADC /* ResultRendererDelegate.swift in Sources */,
+				BEE5FAD6204AE9890072ABD1 /* HouseEntity.swift in Sources */,
+				BEB2E270204AF7B700B5EADC /* HousePickerVC.swift in Sources */,
+				BEE5FAD8204AE9AD0072ABD1 /* CityEntity.swift in Sources */,
+				BEB2E26B204AF69300B5EADC /* StreetDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
