@@ -21,8 +21,6 @@ protocol CommonDataSource {
     var results: [Entity] { get set }
     
     func set(query: String?)
-    
-    func result(at index: Int) -> Entity
 }
 
 extension CommonDataSource {
