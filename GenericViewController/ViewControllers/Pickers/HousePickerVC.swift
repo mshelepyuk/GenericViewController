@@ -11,7 +11,7 @@ import Foundation
 class HouseResultPickerVC: ResultPickerVC<HouseDataSource> {
     
     init(completionHandler: @escaping ((HouseEntity) -> Void)) {
-        super.init(dataSource: HouseDataSource(), input: ResultRendererVC(), completionHandler: completionHandler)
+        super.init(dataSource: HouseDataSource(), completionHandler: completionHandler)
     }
     
     required init?(coder aDecoder: NSCoder) {

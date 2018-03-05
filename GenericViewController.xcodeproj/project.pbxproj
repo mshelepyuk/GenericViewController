@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BEB2E25A204AEC2500B5EADC /* ResultRendererDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E259204AEC2500B5EADC /* ResultRendererDelegate.swift */; };
 		BEB2E25C204AEC9600B5EADC /* ResultPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E25B204AEC9600B5EADC /* ResultPickerVC.swift */; };
-		BEB2E25F204AED0600B5EADC /* ResultRendererInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E25E204AED0600B5EADC /* ResultRendererInput.swift */; };
 		BEB2E261204AEF0400B5EADC /* CityDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E260204AEF0400B5EADC /* CityDataSource.swift */; };
 		BEB2E263204AF21500B5EADC /* CityResultPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E262204AF21500B5EADC /* CityResultPickerVC.swift */; };
 		BEB2E265204AF33000B5EADC /* UITableView+Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E264204AF33000B5EADC /* UITableView+Generics.swift */; };
@@ -30,13 +29,12 @@
 		BEE5FAD6204AE9890072ABD1 /* HouseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5FAD5204AE9890072ABD1 /* HouseEntity.swift */; };
 		BEE5FAD8204AE9AD0072ABD1 /* CityEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5FAD7204AE9AD0072ABD1 /* CityEntity.swift */; };
 		BEE5FADB204AE9DB0072ABD1 /* Entities+ResultListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5FADA204AE9DB0072ABD1 /* Entities+ResultListItem.swift */; };
-		BEE5FADE204AEA4D0072ABD1 /* ResultRendererVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5FADD204AEA4D0072ABD1 /* ResultRendererVC.swift */; };
+		DE00234C204D42C100A7A093 /* SuggestResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE00234B204D42C100A7A093 /* SuggestResultVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BEB2E259204AEC2500B5EADC /* ResultRendererDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRendererDelegate.swift; sourceTree = "<group>"; };
 		BEB2E25B204AEC9600B5EADC /* ResultPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPickerVC.swift; sourceTree = "<group>"; };
-		BEB2E25E204AED0600B5EADC /* ResultRendererInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRendererInput.swift; sourceTree = "<group>"; };
 		BEB2E260204AEF0400B5EADC /* CityDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataSource.swift; sourceTree = "<group>"; };
 		BEB2E262204AF21500B5EADC /* CityResultPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityResultPickerVC.swift; sourceTree = "<group>"; };
 		BEB2E264204AF33000B5EADC /* UITableView+Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Generics.swift"; sourceTree = "<group>"; };
@@ -59,7 +57,7 @@
 		BEE5FAD5204AE9890072ABD1 /* HouseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseEntity.swift; sourceTree = "<group>"; };
 		BEE5FAD7204AE9AD0072ABD1 /* CityEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityEntity.swift; sourceTree = "<group>"; };
 		BEE5FADA204AE9DB0072ABD1 /* Entities+ResultListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entities+ResultListItem.swift"; sourceTree = "<group>"; };
-		BEE5FADD204AEA4D0072ABD1 /* ResultRendererVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRendererVC.swift; sourceTree = "<group>"; };
+		DE00234B204D42C100A7A093 /* SuggestResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestResultVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +142,6 @@
 				BEE5FACF204AE88F0072ABD1 /* CommonDataSource.swift */,
 				BEE5FAD1204AE9420072ABD1 /* CommonResultListItem.swift */,
 				BEB2E259204AEC2500B5EADC /* ResultRendererDelegate.swift */,
-				BEB2E25E204AED0600B5EADC /* ResultRendererInput.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -163,8 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				BEB2E26E204AF7AC00B5EADC /* Pickers */,
-				BEE5FADD204AEA4D0072ABD1 /* ResultRendererVC.swift */,
 				BEB2E25B204AEC9600B5EADC /* ResultPickerVC.swift */,
+				DE00234B204D42C100A7A093 /* SuggestResultVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -242,7 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB2E265204AF33000B5EADC /* UITableView+Generics.swift in Sources */,
-				BEE5FADE204AEA4D0072ABD1 /* ResultRendererVC.swift in Sources */,
+				DE00234C204D42C100A7A093 /* SuggestResultVC.swift in Sources */,
 				BEB2E26D204AF78800B5EADC /* HouseDataSource.swift in Sources */,
 				BEB2E25C204AEC9600B5EADC /* ResultPickerVC.swift in Sources */,
 				BEE5FAD2204AE9420072ABD1 /* CommonResultListItem.swift in Sources */,
@@ -253,7 +250,6 @@
 				BEB2E272204AF7E100B5EADC /* StreetPickerVC.swift in Sources */,
 				BEE5FADB204AE9DB0072ABD1 /* Entities+ResultListItem.swift in Sources */,
 				BEE5FAD4204AE95E0072ABD1 /* StreetEntity.swift in Sources */,
-				BEB2E25F204AED0600B5EADC /* ResultRendererInput.swift in Sources */,
 				BEB2E269204AF5E300B5EADC /* AddressEntity.swift in Sources */,
 				BEE5FABD204AE7C90072ABD1 /* ViewController.swift in Sources */,
 				BEE5FABB204AE7C90072ABD1 /* AppDelegate.swift in Sources */,

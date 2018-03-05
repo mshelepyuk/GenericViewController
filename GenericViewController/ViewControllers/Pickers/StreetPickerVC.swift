@@ -11,7 +11,7 @@ import UIKit
 class StreetResultPickerVC: ResultPickerVC<StreetDataSource> {
     
     init(completionHandler: @escaping ((StreetEntity) -> Void)) {
-        super.init(dataSource: StreetDataSource(), input: ResultRendererVC(), completionHandler: completionHandler)
+        super.init(dataSource: StreetDataSource(), completionHandler: completionHandler)
     }
     
     required init?(coder aDecoder: NSCoder) {

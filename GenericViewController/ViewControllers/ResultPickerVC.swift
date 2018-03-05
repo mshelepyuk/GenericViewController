@@ -8,24 +8,20 @@
 
 import UIKit
 
-typealias RendererInputVC = UIViewController & ResultRendererInput
-
 class ResultPickerVC<T: CommonDataSource>: UIViewController {
+    typealias ResultPickerCompletion = ((T.Entity) -> Void)
+    
     var searchView: UITextField!
-    var resultInput: UIViewController & ResultRendererInput
     
-    var dataSource: T
+    private var suggestVC: SuggestResultVC<T, ResultPickerVC>
     
-    private var completionHandler: ((T.Entity) -> Void)
+    private var completionHandler: ResultPickerCompletion
     
-    init(dataSource: T, input: RendererInputVC, completionHandler: @escaping ((T.Entity) -> Void)) {
-        self.dataSource = dataSource
-        self.resultInput = input
+    init(dataSource: T, completionHandler: @escaping ResultPickerCompletion) {
+        self.suggestVC = SuggestResultVC(dataSource: dataSource)
         self.completionHandler = completionHandler
         
         super.init(nibName: nil, bundle: nil)
-        
-        resultInput.delegate = self
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -36,8 +32,7 @@ class ResultPickerVC<T: CommonDataSource>: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        resultInput.delegate = self
-        dataSource.delegate = self
+        suggestVC.delegate = self
         
         let searchFrame = CGRect(x: 0, y: 44.0, width: view.frame.width, height: 60.0)
         searchView = UITextField(frame: searchFrame)
@@ -45,29 +40,20 @@ class ResultPickerVC<T: CommonDataSource>: UIViewController {
         view.addSubview(searchView)
         
         let resultsFrame = CGRect(x: 0, y: searchFrame.maxY, width: view.frame.width, height: view.frame.height - searchFrame.maxY)
-        resultInput.view.frame = resultsFrame
+        suggestVC.view.frame = resultsFrame
         
-        view.addSubview(resultInput.view)
-        addChildViewController(resultInput)
+        view.addSubview(suggestVC.view)
+        addChildViewController(suggestVC)
     }
     
     @objc func textDidChanged(_ input: UITextField) {
-        dataSource.set(query: input.text)
+        suggestVC.set(query: input.text)
     }
 }
 
-// MARK: - CommonDataSourceDelegate
-extension ResultPickerVC: CommonDataSourceDelegate {
-    func resultsFetched(_ results: [CommonResultListItem]) {
-        resultInput.passData(results)
-    }
-}
-
-// MARK: - ReesultRendererDelegate {
-extension ResultPickerVC: ResultRendererDelegate {
-    func didSelect(at index: Int) {
-        let resultItem = dataSource.result(at: index)
-        
-        completionHandler(resultItem)
+// MARK: - GenericResultDelegate
+extension ResultPickerVC: SuggestResultsDelegate {
+    func didSelect(result: T.Entity) {
+        completionHandler(result)
     }
 }

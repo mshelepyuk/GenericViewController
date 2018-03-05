@@ -11,7 +11,7 @@ import UIKit
 class CityResultPickerVC: ResultPickerVC<CityDataSource> {
     
     init(completionHandler: @escaping ((CityEntity) -> Void)) {
-        super.init(dataSource: CityDataSource(), input: ResultRendererVC(), completionHandler: completionHandler)
+        super.init(dataSource: CityDataSource(), completionHandler: completionHandler)
     }
     
     required init?(coder aDecoder: NSCoder) {

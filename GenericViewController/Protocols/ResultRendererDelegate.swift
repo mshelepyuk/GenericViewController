@@ -8,6 +8,8 @@
 
 import Foundation
 
-protocol ResultRendererDelegate: class {
-    func didSelect(at index: Int)
+protocol SuggestResultsDelegate: class {
+    associatedtype Entity: CommonResultListItem
+    
+    func didSelect(result: Entity)
 }
